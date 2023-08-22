@@ -1,0 +1,364 @@
+Airport: Hartsfield Jackson Atlanta International
+City: Atlanta
+IATA: ATL
+Passengers 2012: 95,513,828
+Passengers 2011: 92,389,023
+Change: 1%
+Latitude: 33.6367
+Longitude: -84.4281
+
+Airport: Los Angeles International
+City: Los Angeles
+IATA: LAX
+Passengers 2012: 63,688,121
+Passengers 2011: 61,862,052
+Change: 1%
+Latitude: 33.9425
+Longitude: -118.4081
+
+Airport: Dallas Fort Worth International
+City: Dallas-Fort Worth
+IATA: DFW
+Passengers 2012: 58,621,369
+Passengers 2011: 57,832,495
+Change: 1%
+Latitude: 32.8969
+Longitude: -97.0381
+
+Airport: Denver International
+City: Denver
+IATA: DEN
+Passengers 2012: 53,156,278
+Passengers 2011: 52,849,132
+Change: 1%
+Latitude: 39.8617
+Longitude: -104.6731
+
+Airport: John F Kennedy International
+City: New York
+IATA: JFK
+Passengers 2012: 49,291,765
+Passengers 2011: 47,644,060
+Change: 1%
+Latitude: 40.6397
+Longitude: -73.7789
+
+Airport: San Francisco International
+City: San Francisco
+IATA: SFO
+Passengers 2012: 44,399,885
+Passengers 2011: 40,927,786
+Change: 1%
+Latitude: 37.6189
+Longitude: -122.3750
+
+Airport: Charlotte Douglas International
+City: Charlotte
+IATA: CLT
+Passengers 2012: 41,228,372
+Passengers 2011: 39,043,708
+Change: 1%
+Latitude: 35.2139
+Longitude: -80.9431
+
+Airport: McCarran International
+City: Las Vegas
+IATA: LAS
+Passengers 2012: 40,799,830
+Passengers 2011: 40,560,285
+Change: 1%
+Latitude: 36.0800
+Longitude: -115.1522
+
+Airport: Phoenix Sky Harbor International
+City: Phoenix
+IATA: PHX
+Passengers 2012: 40,421,611
+Passengers 2011: 40,591,948
+Change: 1%
+Latitude: 33.4342
+Longitude: -112.0117
+
+Airport: George Bush Intercontinental Houston
+City: Houston
+IATA: IAH
+Passengers 2012: 39,891,444
+Passengers 2011: 40,128,953
+Change: 1%
+Latitude: 29.9844
+Longitude: -95.3414
+
+Airport: Miami International
+City: Miami
+IATA: MIA
+Passengers 2012: 39,467,444
+Passengers 2011: 38,314,389
+Change: 1%
+Latitude: 25.7933
+Longitude: -80.2906
+
+Airport: Orlando International
+City: Orlando
+IATA: MCO
+Passengers 2012: 35,288,887
+Passengers 2011: 35,426,006
+Change: 1%
+Latitude: 28.4294
+Longitude: -81.3089
+
+Airport: Newark Liberty International
+City: Newark
+IATA: EWR
+Passengers 2012: 34,014,027
+Passengers 2011: 33,697,492
+Change: 1%
+Latitude: 40.6925
+Longitude: -74.1686
+
+Airport: Seattle Tacoma International
+City: Seattle
+IATA: SEA
+Passengers 2012: 33,223,111
+Passengers 2011: 32,823,220
+Change: 1%
+Latitude: 47.4489
+Longitude: -122.3094
+
+Airport: Minneapolis-St Paul International/Wold-Chamberlain
+City: Minneapolis
+IATA: MSP
+Passengers 2012: 33,170,960
+Passengers 2011: 33,118,499
+Change: 1%
+Latitude: 44.8819
+Longitude: -93.2217
+
+Airport: Detroit Metropolitan Wayne County
+City: Detroit
+IATA: DTW
+Passengers 2012: 32,241,731
+Passengers 2011: 32,406,159
+Change: 1%
+Latitude: 42.2125
+Longitude: -83.3533
+
+Airport: Philadelphia International
+City: Philadelphia
+IATA: PHL
+Passengers 2012: 30,252,816
+Passengers 2011: 30,839,175
+Change: 1%
+Latitude: 39.8719
+Longitude: -75.2411
+
+Airport: General Edward Lawrence Logan International
+City: Boston
+IATA: BOS
+Passengers 2012: 29,349,759
+Passengers 2011: 28,932,808
+Change: 1%
+Latitude: 42.3631
+Longitude: -71.0064
+
+Airport: La Guardia
+City: New York
+IATA: LGA
+Passengers 2012: 25,707,784
+Passengers 2011: 24,122,478
+Change: 1%
+Latitude: 40.7772
+Longitude: -73.8726
+
+Airport: Fort Lauderdale Hollywood International
+City: Fort Lauderdale
+IATA: FLL
+Passengers 2012: 23,569,103
+Passengers 2011: 23,349,835
+Change: 1%
+Latitude: 26.0725
+Longitude: -80.1528
+
+Airport: Baltimore/Washington International Thurgood Marshall
+City: Baltimore
+IATA: BWI
+Passengers 2012: 22,679,887
+Passengers 2011: 22,395,908
+Change: 1%
+Latitude: 39.1753
+Longitude: -76.6683
+
+Airport: Washington Dulles International
+City: Washington
+IATA: IAD
+Passengers 2012: 22,408,105
+Passengers 2011: 23,056,291
+Change: 1%
+Latitude: 38.9444
+Longitude: -77.4558
+
+Airport: Salt Lake City International
+City: Salt Lake City
+IATA: SLC
+Passengers 2012: 20,102,078
+Passengers 2011: 20,389,474
+Change: 1%
+Latitude: 40.7883
+Longitude: -111.9778
+
+Airport: Ronald Reagan Washington National
+City: Washington
+IATA: DCA
+Passengers 2012: 19,630,213
+Passengers 2011: 18,802,394
+Change: 1%
+Latitude: 38.8522
+Longitude: -77.0378
+
+Airport: Chicago Midway International
+City: Chicago
+IATA: MDW
+Passengers 2012: 19,408,167
+Passengers 2011: 18,777,126
+Change: 1%
+Latitude: 41.7861
+Longitude: -87.7525
+
+Airport: Honolulu International
+City: Honolulu
+IATA: HNL
+Passengers 2012: 19,291,412
+Passengers 2011: 17,991,497
+Change: 1%
+Latitude: 21.3186
+Longitude: -157.9225
+
+Airport: San Diego International
+City: San Diego
+IATA: SAN
+Passengers 2012: 17,250,265
+Passengers 2011: 16,891,690
+Change: 1%
+Latitude: 32.7336
+Longitude: -117.1897
+
+Airport: Tampa International
+City: Tampa
+IATA: TPA
+Passengers 2012: 16,820,859
+Passengers 2011: 16,732,051
+Change: 1%
+Latitude: 27.9756
+Longitude: -82.5333
+
+Airport: Cleveland Hopkins International
+City: Cleveland
+IATA: CLE
+Passengers 2012: 16,075,798
+Passengers 2011: 16,422,750
+Change: 1%
+Latitude: 41.4117
+Longitude: -81.8497
+
+Airport: Portland International
+City: Portland
+IATA: PDX
+Passengers 2012: 14,390,784
+Passengers 2011: 13,675,924
+Change: 1%
+Latitude: 45.5886
+Longitude: -122.5975
+Picture: 
+Icon: airports
+Want to visit: So so... 
+Airport: Lambert St Louis International
+City: St Louis
+IATA: STL
+Passengers 2012: 12,688,726
+Passengers 2011: 12,526,150
+Change: 1%
+Latitude: 38.7472
+Longitude: -90.3614
+
+Airport: William P Hobby
+City: Houston
+IATA: HOU
+Passengers 2012: 10,437,647
+Passengers 2011: 9,843,302
+Change: 1%
+Latitude: 29.6456
+Longitude: -95.2789
+
+Airport: Metropolitan Oakland International
+City: Oakland
+IATA: OAK
+Passengers 2012: 10,040,864
+Passengers 2011: 9,266,570
+Change: 1%
+Latitude: 37.7214
+Longitude: -122.2208
+
+Airport: Kansas City International
+City: Kansas City
+IATA: MCI
+Passengers 2012: 10,004,371
+Passengers 2011: 10,430,541
+Change: 1%
+Latitude: 39.2975
+Longitude: -94.7139
+
+Airport: Nashville International
+City: Nashville
+IATA: BNA
+Passengers 2012: 9,834,627
+Passengers 2011: 9,602,169
+Change: 1%
+Latitude: 36.1267
+Longitude: -86.6819
+
+Airport: Austin Bergstrom International
+City: Austin
+IATA: AUS
+Passengers 2012: 9,430,314
+Passengers 2011: 9,080,875
+Change: 1%
+Latitude: 30.1944
+Longitude: -97.6682
+
+Airport: Raleigh Durham International
+City: Raleigh/Durham
+IATA: RDU
+Passengers 2012: 9,220,391
+Passengers 2011: 9,161,259
+Change: 1%
+Latitude: 35.8778
+Longitude: -78.7875
+
+Airport: Sacramento International
+City: Sacramento
+IATA: SMF
+Passengers 2012: 8,910,570
+Passengers 2011: 8,929,289
+Change: 1%
+Latitude: 38.6956
+Longitude: -121.5908
+
+Airport: John Wayne-Orange County
+City: Santa Ana
+IATA: SNA
+Passengers 2012: 8,857,944
+Passengers 2011: 8,609,008
+Change: 1%
+Latitude: 33.6756
+Longitude: -117.8683
+
+Airport: Chicago O’Hare International
+City: Chicago
+IATA: ORD
+Passengers 2012: 66,633,503
+Passengers 2011: 66,701,241
+Change: 1%
+Latitude: 41.9786
+Longitude: -87.9047
+
+	   
+

@@ -1,0 +1,15 @@
+[S,B1,B2] = [0, 0, 1] Total running time: 10260 ms
+[S,B1,B2] = [0, 1, 0] Total running time: 10246 ms
+[S,B1,B2] = [0, 1, 1] Total running time: 10262 ms
+[S,B1,B2] = [0, 2, 0] Total running time: 10243 ms
+[S,B1,B2] = [0, 2, 1] Total running time: 10249 ms
+[S,B1,B2] = [0, 3, 0] Total running time: 10241 ms
+[S,B1,B2] = [0, 3, 1] Total running time: 10231 ms
+[S,B1,B2] = [1, 0, 0] Total running time: 10256 ms
+[S,B1,B2] = [1, 0, 1] Total running time: 10235 ms
+[S,B1,B2] = [1, 1, 0] Total running time: 10223 ms
+[S,B1,B2] = [1, 1, 1] Total running time: 10241 ms
+[S,B1,B2] = [1, 2, 0] Total running time: 10418 ms
+[S,B1,B2] = [1, 2, 1] Total running time: 10246 ms
+[S,B1,B2] = [1, 3, 0] Total running time: 10239 ms
+[S,B1,B2] = [1, 3, 1] Total running time: 10250 ms

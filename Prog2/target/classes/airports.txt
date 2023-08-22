@@ -1,0 +1,79 @@
+Atlanta,ATL,33.6367,-84.4281
+
+Los Angeles,LAX,33.9425,-118.4081
+
+Dallas-Fort Worth,DFW,32.8969,-97.0381
+
+Denver,DEN,39.8617,-104.6731
+
+New York,JFK,40.6397,-73.7789
+
+San Francisco,SFO,37.6189,-122.3750
+
+Charlotte,CLT,35.2139,-80.9431
+
+Las Vegas,LAS,36.0800,-115.1522
+
+Phoenix,PHX,33.4342,-112.0117
+
+Houston,IAH,29.9844,-95.3414
+
+Miami,MIA,25.7933,-80.2906
+
+Orlando,MCO,28.4294,-81.3089
+
+Newark,EWR,40.6925,-74.1686
+
+Seattle,SEA,47.4489,-122.3094
+
+Minneapolis,MSP,44.8819,-93.2217
+
+Detroit,DTW,42.2125,-83.3533
+
+Philadelphia,PHL,39.8719,-75.2411
+
+Boston,BOS,42.3631,-71.0064
+
+New York,LGA,40.7772,-73.8726
+
+Fort Lauderdale,FLL,26.0725,-80.1528
+
+Baltimore,BWI,39.1753,-76.6683
+
+Washington,IAD,38.9444,-77.4558
+
+Salt Lake City,SLC,40.7883,-111.9778
+
+Washington,DCA,38.8522,-77.0378
+
+Chicago,MDW,41.7861,-87.7525
+
+Honolulu,HNL,21.3186,-157.9225
+
+San Diego,SAN,32.7336,-117.1897
+
+Tampa,TPA,27.9756,-82.5333
+
+Cleveland,CLE,41.4117,-81.8497
+
+Portland,PDX,45.5886,-122.5975
+
+St Louis,STL,38.7472,-90.3614
+
+Houston,HOU,29.6456,-95.2789
+
+Oakland,OAK,37.7214,-122.2208
+
+Kansas City,MCI,39.2975,-94.7139
+
+Nashville,BNA,36.1267,-86.6819
+
+Austin,AUS,30.1944,-97.6682
+
+Raleigh/Durham,RDU,35.8778,-78.7875
+
+Sacramento,SMF,38.6956,-121.5908
+
+Santa Ana,SNA,33.6756,-117.8683
+
+Chicago,ORD,41.9786,-87.9047

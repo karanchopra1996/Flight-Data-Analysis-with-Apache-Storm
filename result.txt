@@ -1,0 +1,1837 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< css533.prog2:Flights-Analysis >--------------------
+[INFO] Building Flights-Analysis 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ Flights-Analysis ---
+0    [TopologyMain.main()] INFO  backtype.storm.zookeeper  - Starting inprocess zookeeper at port 34104 and dir /tmp/53f3daca-2d26-40b0-a192-8a1729670241
+127  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Starting Nimbus with conf {"topology.fall.back.on.java.serialization" true, "zmq.linger.millis" 0, "topology.skip.missing.kryo.registrations" true, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "storm.local.dir" "/tmp/600ac47b-eeb9-4277-a0ce-d1831411a361", "supervisor.worker.start.timeout.secs" 240, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "storm.zookeeper.port" 34104, "transactional.zookeeper.port" nil, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["localhost"], "transactional.zookeeper.root" "/transactional", "topology.worker.childopts" nil, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "task.heartbeat.frequency.secs" 3, "topology.max.spout.pending" nil, "storm.zookeeper.retry.interval" 1000, "supervisor.slots.ports" [6700 6701 6702 6703], "topology.debug" false, "nimbus.task.launch.secs" 120, "nimbus.supervisor.timeout.secs" 60, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 1, "supervisor.childopts" "-Xmx1024m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "nimbus.task.timeout.secs" 30, "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 30, "nimbus.file.copy.expiration.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "topology.ackers" 1, "storm.cluster.mode" "local", "topology.optimize" true, "topology.max.task.parallelism" nil}
+172  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+278  [TopologyMain.main()-EventThread] INFO  backtype.storm.zookeeper  - Zookeeper state update: :connected:none
+306  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+358  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+362  [TopologyMain.main()-EventThread] INFO  backtype.storm.zookeeper  - Zookeeper state update: :connected:none
+372  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+372  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:34104] WARN  org.apache.zookeeper.server.NIOServerCnxn  - EndOfStreamException: Unable to read additional data from client sessionid 0x16a225cea3c0002, likely client has closed socket
+374  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+383  [TopologyMain.main()-EventThread] INFO  backtype.storm.zookeeper  - Zookeeper state update: :connected:none
+387  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+387  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:34104] WARN  org.apache.zookeeper.server.NIOServerCnxn  - EndOfStreamException: Unable to read additional data from client sessionid 0x16a225cea3c0004, likely client has closed socket
+410  [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Starting Supervisor with conf {"topology.fall.back.on.java.serialization" true, "zmq.linger.millis" 0, "topology.skip.missing.kryo.registrations" true, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "storm.local.dir" "/tmp/368531cd-5c9d-4bb6-a05c-f1391d50783e", "supervisor.worker.start.timeout.secs" 240, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "storm.zookeeper.port" 34104, "transactional.zookeeper.port" nil, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["localhost"], "transactional.zookeeper.root" "/transactional", "topology.worker.childopts" nil, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "task.heartbeat.frequency.secs" 3, "topology.max.spout.pending" nil, "storm.zookeeper.retry.interval" 1000, "supervisor.slots.ports" (1 2 3), "topology.debug" false, "nimbus.task.launch.secs" 120, "nimbus.supervisor.timeout.secs" 60, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 1, "supervisor.childopts" "-Xmx1024m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "nimbus.task.timeout.secs" 30, "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 30, "nimbus.file.copy.expiration.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "topology.ackers" 1, "storm.cluster.mode" "local", "topology.optimize" true, "topology.max.task.parallelism" nil}
+411  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+415  [TopologyMain.main()-EventThread] INFO  backtype.storm.zookeeper  - Zookeeper state update: :connected:none
+423  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+474  [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Starting supervisor with id a00ca3da-da83-4e20-a494-8e4b71464b82 at host cssmpi1.uwb.edu
+478  [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Starting Supervisor with conf {"topology.fall.back.on.java.serialization" true, "zmq.linger.millis" 0, "topology.skip.missing.kryo.registrations" true, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "storm.local.dir" "/tmp/e1720780-1a8c-450a-abf2-329bdcd35252", "supervisor.worker.start.timeout.secs" 240, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "storm.zookeeper.port" 34104, "transactional.zookeeper.port" nil, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["localhost"], "transactional.zookeeper.root" "/transactional", "topology.worker.childopts" nil, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "task.heartbeat.frequency.secs" 3, "topology.max.spout.pending" nil, "storm.zookeeper.retry.interval" 1000, "supervisor.slots.ports" (4 5 6), "topology.debug" false, "nimbus.task.launch.secs" 120, "nimbus.supervisor.timeout.secs" 60, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 1, "supervisor.childopts" "-Xmx1024m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "nimbus.task.timeout.secs" 30, "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 30, "nimbus.file.copy.expiration.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "topology.ackers" 1, "storm.cluster.mode" "local", "topology.optimize" true, "topology.max.task.parallelism" nil}
+479  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+501  [TopologyMain.main()-EventThread] INFO  backtype.storm.zookeeper  - Zookeeper state update: :connected:none
+509  [TopologyMain.main()] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+526  [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Starting supervisor with id acdde095-97e8-460d-9e0d-4e1ac5823fdc at host cssmpi1.uwb.edu
+679  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Received topology submission for Flights-Analysis-Toplogie with conf {"topology.ackers" 1, "topology.kryo.register" nil, "topology.name" "Flights-Analysis-Toplogie", "storm.id" "Flights-Analysis-Toplogie-1-1555354676", "FlightsFile" "src/main/resources/flights.txt", "topology.debug" false, "topology.max.spout.pending" 1, "AirportsData" "src/main/resources/airports.txt"}
+753  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:1 timed out
+755  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:2 timed out
+755  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:3 timed out
+756  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:4 timed out
+757  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:5 timed out
+758  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:6 timed out
+759  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:7 timed out
+760  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Task Flights-Analysis-Toplogie-1-1555354676:8 timed out
+763  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Reassigning Flights-Analysis-Toplogie-1-1555354676 to 1 slots
+763  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Reassign ids: [1 2 3 4 5 6 7 8]
+763  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Available slots: (["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4] ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 5] ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 6] ["a00ca3da-da83-4e20-a494-8e4b71464b82" 1] ["a00ca3da-da83-4e20-a494-8e4b71464b82" 2] ["a00ca3da-da83-4e20-a494-8e4b71464b82" 3])
+767  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Setting new assignment for storm id Flights-Analysis-Toplogie-1-1555354676: #:backtype.storm.daemon.common.Assignment{:master-code-dir "/tmp/600ac47b-eeb9-4277-a0ce-d1831411a361/nimbus/stormdist/Flights-Analysis-Toplogie-1-1555354676", :node->host {"acdde095-97e8-460d-9e0d-4e1ac5823fdc" "cssmpi1.uwb.edu"}, :task->node+port {8 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 7 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 6 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 5 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 4 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 3 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 2 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4], 1 ["acdde095-97e8-460d-9e0d-4e1ac5823fdc" 4]}, :task->start-time-secs {1 1555354676, 2 1555354676, 3 1555354676, 4 1555354676, 5 1555354676, 6 1555354676, 7 1555354676, 8 1555354676}}
+785  [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Activating Flights-Analysis-Toplogie: Flights-Analysis-Toplogie-1-1555354676
+804  [Thread-10] INFO  backtype.storm.daemon.supervisor  - Downloading code for storm id Flights-Analysis-Toplogie-1-1555354676 from /tmp/600ac47b-eeb9-4277-a0ce-d1831411a361/nimbus/stormdist/Flights-Analysis-Toplogie-1-1555354676
+807  [Thread-5] INFO  backtype.storm.daemon.supervisor  - Downloading code for storm id Flights-Analysis-Toplogie-1-1555354676 from /tmp/600ac47b-eeb9-4277-a0ce-d1831411a361/nimbus/stormdist/Flights-Analysis-Toplogie-1-1555354676
+815  [Thread-5] INFO  backtype.storm.daemon.supervisor  - Finished downloading code for storm id Flights-Analysis-Toplogie-1-1555354676 from /tmp/600ac47b-eeb9-4277-a0ce-d1831411a361/nimbus/stormdist/Flights-Analysis-Toplogie-1-1555354676
+815  [Thread-10] INFO  backtype.storm.daemon.supervisor  - Finished downloading code for storm id Flights-Analysis-Toplogie-1-1555354676 from /tmp/600ac47b-eeb9-4277-a0ce-d1831411a361/nimbus/stormdist/Flights-Analysis-Toplogie-1-1555354676
+840  [Thread-11] INFO  backtype.storm.daemon.supervisor  - Launching worker with assignment #:backtype.storm.daemon.supervisor.LocalAssignment{:storm-id "Flights-Analysis-Toplogie-1-1555354676", :task-ids (8 7 6 5 4 3 2 1)} for this supervisor acdde095-97e8-460d-9e0d-4e1ac5823fdc on port 4 with id fd1851b9-5af9-4f5b-9388-1fd212bf384f
+842  [Thread-11] INFO  backtype.storm.daemon.worker  - Launching worker for Flights-Analysis-Toplogie-1-1555354676 on acdde095-97e8-460d-9e0d-4e1ac5823fdc:4 with id fd1851b9-5af9-4f5b-9388-1fd212bf384f and conf {"topology.fall.back.on.java.serialization" true, "zmq.linger.millis" 0, "topology.skip.missing.kryo.registrations" true, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "storm.local.dir" "/tmp/e1720780-1a8c-450a-abf2-329bdcd35252", "supervisor.worker.start.timeout.secs" 240, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "storm.zookeeper.port" 34104, "transactional.zookeeper.port" nil, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["localhost"], "transactional.zookeeper.root" "/transactional", "topology.worker.childopts" nil, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "task.heartbeat.frequency.secs" 3, "topology.max.spout.pending" nil, "storm.zookeeper.retry.interval" 1000, "supervisor.slots.ports" (4 5 6), "topology.debug" false, "nimbus.task.launch.secs" 120, "nimbus.supervisor.timeout.secs" 60, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 1, "supervisor.childopts" "-Xmx1024m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "nimbus.task.timeout.secs" 30, "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 30, "nimbus.file.copy.expiration.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "topology.ackers" 1, "storm.cluster.mode" "local", "topology.optimize" true, "topology.max.task.parallelism" nil}
+842  [Thread-11] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+851  [Thread-11-EventThread] INFO  backtype.storm.zookeeper  - Zookeeper state update: :connected:none
+854  [Thread-11] INFO  com.netflix.curator.framework.imps.CuratorFrameworkImpl  - Starting
+947  [Thread-11] INFO  backtype.storm.daemon.task  - Loading task flight-data-reader:8
+984  [Thread-11] INFO  backtype.storm.daemon.task  - Opening spout flight-data-reader:8
+985  [Thread-11] INFO  backtype.storm.daemon.task  - Opened spout flight-data-reader:8
+994  [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task flight-data-reader:8
+997  [Thread-11] INFO  backtype.storm.daemon.task  - Loading task airline-sorter:7
+994  [Thread-19] INFO  backtype.storm.daemon.task  - Activating spout flight-data-reader:8
+1113 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt airline-sorter:7
+1114 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt airline-sorter:7
+1116 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task airline-sorter:7
+1118 [Thread-11] INFO  backtype.storm.daemon.task  - Loading task airline-sorter:6
+1170 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt airline-sorter:6
+1170 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt airline-sorter:6
+1172 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task airline-sorter:6
+1174 [Thread-11] INFO  backtype.storm.daemon.task  - Loading task hub-identifier:5
+1200 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt hub-identifier:5
+Bolt: HubIdentifier.prepare
+Bolt: readAirportData....
+Atlanta(ATL): 33.6367, -84.4281
+Los Angeles(LAX): 33.9425, -118.4081
+Dallas-Fort Worth(DFW): 32.8969, -97.0381
+Denver(DEN): 39.8617, -104.6731
+New York(JFK): 40.6397, -73.7789
+San Francisco(SFO): 37.6189, -122.375
+Charlotte(CLT): 35.2139, -80.9431
+Las Vegas(LAS): 36.08, -115.1522
+Phoenix(PHX): 33.4342, -112.0117
+Houston(IAH): 29.9844, -95.3414
+Miami(MIA): 25.7933, -80.2906
+Orlando(MCO): 28.4294, -81.3089
+Newark(EWR): 40.6925, -74.1686
+Seattle(SEA): 47.4489, -122.3094
+Minneapolis(MSP): 44.8819, -93.2217
+Detroit(DTW): 42.2125, -83.3533
+Philadelphia(PHL): 39.8719, -75.2411
+Boston(BOS): 42.3631, -71.0064
+New York(LGA): 40.7772, -73.8726
+Fort Lauderdale(FLL): 26.0725, -80.1528
+Baltimore(BWI): 39.1753, -76.6683
+Washington(IAD): 38.9444, -77.4558
+Salt Lake City(SLC): 40.7883, -111.9778
+Washington(DCA): 38.8522, -77.0378
+Chicago(MDW): 41.7861, -87.7525
+Honolulu(HNL): 21.3186, -157.9225
+San Diego(SAN): 32.7336, -117.1897
+Tampa(TPA): 27.9756, -82.5333
+Cleveland(CLE): 41.4117, -81.8497
+Portland(PDX): 45.5886, -122.5975
+St Louis(STL): 38.7472, -90.3614
+Houston(HOU): 29.6456, -95.2789
+Oakland(OAK): 37.7214, -122.2208
+Kansas City(MCI): 39.2975, -94.7139
+Nashville(BNA): 36.1267, -86.6819
+Austin(AUS): 30.1944, -97.6682
+Raleigh/Durham(RDU): 35.8778, -78.7875
+Sacramento(SMF): 38.6956, -121.5908
+Santa Ana(SNA): 33.6756, -117.8683
+Chicago(ORD): 41.9786, -87.9047
+1211 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt hub-identifier:5
+1228 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task hub-identifier:5
+1229 [Thread-11] INFO  backtype.storm.daemon.task  - Loading task hub-identifier:4
+1258 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt hub-identifier:4
+Bolt: HubIdentifier.prepare
+Bolt: readAirportData....
+Atlanta(ATL): 33.6367, -84.4281
+Los Angeles(LAX): 33.9425, -118.4081
+Dallas-Fort Worth(DFW): 32.8969, -97.0381
+Denver(DEN): 39.8617, -104.6731
+New York(JFK): 40.6397, -73.7789
+San Francisco(SFO): 37.6189, -122.375
+Charlotte(CLT): 35.2139, -80.9431
+Las Vegas(LAS): 36.08, -115.1522
+Phoenix(PHX): 33.4342, -112.0117
+Houston(IAH): 29.9844, -95.3414
+Miami(MIA): 25.7933, -80.2906
+Orlando(MCO): 28.4294, -81.3089
+Newark(EWR): 40.6925, -74.1686
+Seattle(SEA): 47.4489, -122.3094
+Minneapolis(MSP): 44.8819, -93.2217
+Detroit(DTW): 42.2125, -83.3533
+Philadelphia(PHL): 39.8719, -75.2411
+Boston(BOS): 42.3631, -71.0064
+New York(LGA): 40.7772, -73.8726
+Fort Lauderdale(FLL): 26.0725, -80.1528
+Baltimore(BWI): 39.1753, -76.6683
+Washington(IAD): 38.9444, -77.4558
+Salt Lake City(SLC): 40.7883, -111.9778
+Washington(DCA): 38.8522, -77.0378
+Chicago(MDW): 41.7861, -87.7525
+Honolulu(HNL): 21.3186, -157.9225
+San Diego(SAN): 32.7336, -117.1897
+Tampa(TPA): 27.9756, -82.5333
+Cleveland(CLE): 41.4117, -81.8497
+Portland(PDX): 45.5886, -122.5975
+St Louis(STL): 38.7472, -90.3614
+Houston(HOU): 29.6456, -95.2789
+Oakland(OAK): 37.7214, -122.2208
+Kansas City(MCI): 39.2975, -94.7139
+Nashville(BNA): 36.1267, -86.6819
+Austin(AUS): 30.1944, -97.6682
+Raleigh/Durham(RDU): 35.8778, -78.7875
+Sacramento(SMF): 38.6956, -121.5908
+Santa Ana(SNA): 33.6756, -117.8683
+Chicago(ORD): 41.9786, -87.9047
+1262 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt hub-identifier:4
+1286 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task hub-identifier:4
+1288 [Thread-11] INFO  backtype.storm.daemon.task  - Loading task hub-identifier:3
+1316 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt hub-identifier:3
+Bolt: HubIdentifier.prepare
+Bolt: readAirportData....
+Atlanta(ATL): 33.6367, -84.4281
+Los Angeles(LAX): 33.9425, -118.4081
+Dallas-Fort Worth(DFW): 32.8969, -97.0381
+Denver(DEN): 39.8617, -104.6731
+New York(JFK): 40.6397, -73.7789
+San Francisco(SFO): 37.6189, -122.375
+Charlotte(CLT): 35.2139, -80.9431
+Las Vegas(LAS): 36.08, -115.1522
+Phoenix(PHX): 33.4342, -112.0117
+Houston(IAH): 29.9844, -95.3414
+Miami(MIA): 25.7933, -80.2906
+Orlando(MCO): 28.4294, -81.3089
+Newark(EWR): 40.6925, -74.1686
+Seattle(SEA): 47.4489, -122.3094
+Minneapolis(MSP): 44.8819, -93.2217
+Detroit(DTW): 42.2125, -83.3533
+Philadelphia(PHL): 39.8719, -75.2411
+Boston(BOS): 42.3631, -71.0064
+New York(LGA): 40.7772, -73.8726
+Fort Lauderdale(FLL): 26.0725, -80.1528
+Baltimore(BWI): 39.1753, -76.6683
+Washington(IAD): 38.9444, -77.4558
+Salt Lake City(SLC): 40.7883, -111.9778
+Washington(DCA): 38.8522, -77.0378
+Chicago(MDW): 41.7861, -87.7525
+Honolulu(HNL): 21.3186, -157.9225
+San Diego(SAN): 32.7336, -117.1897
+Tampa(TPA): 27.9756, -82.5333
+Cleveland(CLE): 41.4117, -81.8497
+Portland(PDX): 45.5886, -122.5975
+St Louis(STL): 38.7472, -90.3614
+Houston(HOU): 29.6456, -95.2789
+Oakland(OAK): 37.7214, -122.2208
+Kansas City(MCI): 39.2975, -94.7139
+Nashville(BNA): 36.1267, -86.6819
+Austin(AUS): 30.1944, -97.6682
+Raleigh/Durham(RDU): 35.8778, -78.7875
+Sacramento(SMF): 38.6956, -121.5908
+Santa Ana(SNA): 33.6756, -117.8683
+Chicago(ORD): 41.9786, -87.9047
+1321 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt hub-identifier:3
+1334 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task hub-identifier:3
+1335 [Thread-11] INFO  backtype.storm.daemon.task  - Loading task hub-identifier:2
+1341 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt hub-identifier:2
+Bolt: HubIdentifier.prepare
+Bolt: readAirportData....
+Atlanta(ATL): 33.6367, -84.4281
+Los Angeles(LAX): 33.9425, -118.4081
+Dallas-Fort Worth(DFW): 32.8969, -97.0381
+Denver(DEN): 39.8617, -104.6731
+New York(JFK): 40.6397, -73.7789
+San Francisco(SFO): 37.6189, -122.375
+Charlotte(CLT): 35.2139, -80.9431
+Las Vegas(LAS): 36.08, -115.1522
+Phoenix(PHX): 33.4342, -112.0117
+Houston(IAH): 29.9844, -95.3414
+Miami(MIA): 25.7933, -80.2906
+Orlando(MCO): 28.4294, -81.3089
+Newark(EWR): 40.6925, -74.1686
+Seattle(SEA): 47.4489, -122.3094
+Minneapolis(MSP): 44.8819, -93.2217
+Detroit(DTW): 42.2125, -83.3533
+Philadelphia(PHL): 39.8719, -75.2411
+Boston(BOS): 42.3631, -71.0064
+New York(LGA): 40.7772, -73.8726
+Fort Lauderdale(FLL): 26.0725, -80.1528
+Baltimore(BWI): 39.1753, -76.6683
+Washington(IAD): 38.9444, -77.4558
+Salt Lake City(SLC): 40.7883, -111.9778
+Washington(DCA): 38.8522, -77.0378
+Chicago(MDW): 41.7861, -87.7525
+Honolulu(HNL): 21.3186, -157.9225
+San Diego(SAN): 32.7336, -117.1897
+Tampa(TPA): 27.9756, -82.5333
+Cleveland(CLE): 41.4117, -81.8497
+Portland(PDX): 45.5886, -122.5975
+St Louis(STL): 38.7472, -90.3614
+Houston(HOU): 29.6456, -95.2789
+Oakland(OAK): 37.7214, -122.2208
+Kansas City(MCI): 39.2975, -94.7139
+Nashville(BNA): 36.1267, -86.6819
+Austin(AUS): 30.1944, -97.6682
+Raleigh/Durham(RDU): 35.8778, -78.7875
+Sacramento(SMF): 38.6956, -121.5908
+Santa Ana(SNA): 33.6756, -117.8683
+Chicago(ORD): 41.9786, -87.9047
+1345 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt hub-identifier:2
+1348 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task hub-identifier:2
+1349 [Thread-11] INFO  backtype.storm.daemon.task  - Loading task __acker:1
+1353 [Thread-11] INFO  backtype.storm.daemon.task  - Preparing bolt __acker:1
+1357 [Thread-11] INFO  backtype.storm.daemon.task  - Prepared bolt __acker:1
+1358 [Thread-11] INFO  backtype.storm.daemon.task  - Finished loading task __acker:1
+1363 [Thread-11] INFO  backtype.storm.daemon.worker  - Worker has topology config {"storm.id" "Flights-Analysis-Toplogie-1-1555354676", "topology.fall.back.on.java.serialization" true, "zmq.linger.millis" 0, "topology.skip.missing.kryo.registrations" true, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "storm.local.dir" "/tmp/e1720780-1a8c-450a-abf2-329bdcd35252", "supervisor.worker.start.timeout.secs" 240, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "storm.zookeeper.port" 34104, "transactional.zookeeper.port" nil, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["localhost"], "transactional.zookeeper.root" "/transactional", "topology.name" "Flights-Analysis-Toplogie", "topology.worker.childopts" nil, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "task.heartbeat.frequency.secs" 3, "topology.max.spout.pending" 1, "AirportsData" "src/main/resources/airports.txt", "storm.zookeeper.retry.interval" 1000, "supervisor.slots.ports" (4 5 6), "topology.debug" false, "nimbus.task.launch.secs" 120, "nimbus.supervisor.timeout.secs" 60, "topology.kryo.register" nil, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 1, "supervisor.childopts" "-Xmx1024m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "nimbus.task.timeout.secs" 30, "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 30, "nimbus.file.copy.expiration.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "topology.ackers" 1, "storm.cluster.mode" "local", "topology.optimize" true, "topology.max.task.parallelism" nil, "FlightsFile" "src/main/resources/flights.txt"}
+1363 [Thread-11] INFO  backtype.storm.daemon.worker  - Worker fd1851b9-5af9-4f5b-9388-1fd212bf384f for storm Flights-Analysis-Toplogie-1-1555354676 on acdde095-97e8-460d-9e0d-4e1ac5823fdc:4 has finished loading
+Bolt: HubIndentifier.execute: flight N136LM is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight UAL953 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight UAL953 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight AAL2630 is close enough to Houston(IAH)
+Bolt: HubIndentifier.execute: flight FFT1515 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight N9537Q is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight UAL516 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight N35325 is close enough to Phoenix(PHX)
+flight = DAL2928, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N959CR is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight DLH440 is close enough to Houston(IAH)
+Bolt: HubIndentifier.execute: flight SWR2GN is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight SWR2GN is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight SWR2GN is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight AAL1228 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight JBU2518 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight JBU2518 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N2365C is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight UAL516 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight SWA3038 is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight N9254C is close enough to Seattle(SEA)
+flight = FFT1193, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight FFT1515 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight AAL897 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight UAL812 is close enough to Dallas-Fort Worth(DFW)
+flight = HI985, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N7ZK is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight null is close enough to Orlando(MCO)
+flight = null, latitude = null, longitude = null
+flight = UAL478, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N40616 is close enough to Kansas City(MCI)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA5302 is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3017 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight DLH460 is close enough to Philadelphia(PHL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL1059 is close enough to Houston(IAH)
+Bolt: HubIndentifier.execute: flight DLH521 is close enough to Orlando(MCO)
+flight = N527QS, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight QXE2915 is close enough to Seattle(SEA)
+flight = N232CL, latitude = null, longitude = null
+flight = E31, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL1591 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight DAL1591 is close enough to Oakland(OAK)
+flight = SKW5685, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ANA175 is close enough to Los Angeles(LAX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight NKS262 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight NKS262 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight DLH438 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight AAL2001 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight null is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight EDV3295 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight EDV3295 is close enough to Newark(EWR)
+flight = DAL1438, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL1331 is close enough to Charlotte(CLT)
+Bolt: HubIndentifier.execute: flight DAL2914 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight DAL2914 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight DAL2914 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight SKW4026 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Oakland(OAK)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N2364F is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight N910KG is close enough to Las Vegas(LAS)
+flight = DLH2530, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight JIA5421 is close enough to Nashville(BNA)
+Bolt: HubIndentifier.execute: flight N6318S is close enough to Minneapolis(MSP)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight DLH490 is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight SKW5853 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight 685 is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight UAL614 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight UAL614 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight SWA2792 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight SWA2792 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight SWA1606 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight ASH6319 is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight SWA3734 is close enough to Austin(AUS)
+Bolt: HubIndentifier.execute: flight UAL949 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight UAL949 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight SKW5245 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight DAL2815 is close enough to Minneapolis(MSP)
+flight = N811DM, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL1131 is close enough to Dallas-Fort Worth(DFW)
+flight = SKW5541, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight WJA1463 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N613AC is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight UAL2279 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight N62568 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight AAL4 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight AAL881 is close enough to Charlotte(CLT)
+flight = C16, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL577 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight UAL577 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL577 is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+flight = AIJ979, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Atlanta(ATL)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight FFT1139 is close enough to San Diego(SAN)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N11QX is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight AAL639 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight ICL961 is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight null is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight JIA5256 is close enough to Charlotte(CLT)
+Bolt: HubIndentifier.execute: flight AVA038 is close enough to Miami(MIA)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight EJA526 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight EJA526 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight SWA2538 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N1393U is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N1393U is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight FDX3012 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N11QZ is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight NDU602 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight NKS419 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight NKS419 is close enough to Fort Lauderdale(FLL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA4646 is close enough to Sacramento(SMF)
+Bolt: HubIndentifier.execute: flight SWA2826 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight JAL784 is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight N237SH is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight 810 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight 810 is close enough to Fort Lauderdale(FLL)
+flight = OPS17, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL35 is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight ASA379 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight ASA379 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight DAL1088 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight AAL289 is close enough to Sacramento(SMF)
+Bolt: HubIndentifier.execute: flight AAL1957 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight JZA886 is close enough to Denver(DEN)
+flight = RLK266, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight FFT1192 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight N80213 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N80213 is close enough to Fort Lauderdale(FLL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight SKW3250 is close enough to Dallas-Fort Worth(DFW)
+flight = UAL2218, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA9007 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight DAL2128 is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight SWA2318 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight UAL1527 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight UAL1527 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL1527 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N2795J is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight SWA4881 is close enough to Portland(PDX)
+flight = SKW5505, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight JBU305 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N313V is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight EJA562 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight EJA562 is close enough to Washington(DCA)
+flight = N101AK, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL2647 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight null is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight SWA2944 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight EDV3463 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight JBU577 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight GTI3507 is close enough to Santa Ana(SNA)
+Bolt: HubIndentifier.execute: flight null is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight AAL1081 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight AAL560 is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight AAL2002 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight ENY3315 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight NKS166 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight N3033L is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight SWA3603 is close enough to Dallas-Fort Worth(DFW)
+flight = R09, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL1163 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight PHM045 is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight JBU6 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight JBU6 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight DAL231 is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight N17ES is close enough to Fort Lauderdale(FLL)
+flight = FDX1423, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ENY3856 is close enough to Kansas City(MCI)
+flight = SKW5207, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight OXF231 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N92886 is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight N704MD is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight AAL2105 is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL922 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight UAL922 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight N386ME is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight SWA2629 is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight DLH462 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N808JN is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight BOE043 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight DAL1761 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight SKW5003 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight SKW5003 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight UAL1562 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight UAL1562 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL1562 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight AAL1238 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N159WH is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N159WH is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight UAL1956 is close enough to Santa Ana(SNA)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW5448 is close enough to Las Vegas(LAS)
+flight = UAL309, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N818DR is close enough to San Francisco(SFO)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW206Y is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight UAL291 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight SKW3484 is close enough to San Diego(SAN)
+flight = N429LE, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N508KD is close enough to St Louis(STL)
+flight = HKC829, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3012 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight N1656R is close enough to Nashville(BNA)
+Bolt: HubIndentifier.execute: flight SKW3340 is close enough to Sacramento(SMF)
+Bolt: HubIndentifier.execute: flight BAW7W is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight BAW7W is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N818DR is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight DAL670 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight N905FL is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight BKN26 is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight null is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight SKW7371 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight N355VJ is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N205UU is close enough to Tampa(TPA)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL2147 is close enough to Houston(IAH)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight EJA543 is close enough to Tampa(TPA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N6209N is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight N4100Q is close enough to Minneapolis(MSP)
+flight = CPZ5691, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N777JD is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight UAL1712 is close enough to Sacramento(SMF)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL751 is close enough to Newark(EWR)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL760 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight AAL760 is close enough to Santa Ana(SNA)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N299KJ is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight JBU831 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight JBU831 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight JBU831 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight SWA1624 is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight DAL1493 is close enough to Minneapolis(MSP)
+flight = SWA4494, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N391D is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight N164CD is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight ASQ4112 is close enough to Houston(IAH)
+Bolt: HubIndentifier.execute: flight N516SP is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight ASQ2617 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight AAL47 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight AAL47 is close enough to Chicago(ORD)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL252 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight AAL2570 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight GJS6193 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight AAL1257 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight KAP73 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight ENY3493 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight ENY3493 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight ENY3493 is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight PTPCH is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight PTPCH is close enough to Fort Lauderdale(FLL)
+flight = JBU42, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight N97PD is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight ASH5933 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight RCH601 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight KLM601 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight EDV5517 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight EDV5517 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL339 is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight null is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight N865NC is close enough to Raleigh/Durham(RDU)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N81AJ is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight VIR21K is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight null is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight EJA520 is close enough to Austin(AUS)
+Bolt: HubIndentifier.execute: flight DAL2115 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight N190DC is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight SKW5305 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight null is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight SKW3578 is close enough to Salt Lake City(SLC)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL2760 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight null is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight AAL739 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight AAL739 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight null is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight N762AB is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N762AB is close enough to Fort Lauderdale(FLL)
+flight = null, latitude = null, longitude = null
+flight = SAS2662, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA4886 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight SWA4886 is close enough to Oakland(OAK)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight 1830 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight 1830 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight CHH481 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight SWA2617 is close enough to Denver(DEN)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ASH5875 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight null is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight null is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight UAL247 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight UAL247 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL247 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N224LD is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight null is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight N1166W is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight null is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight N150LR is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight VIR21K is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight AAL76 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight AAL76 is close enough to Oakland(OAK)
+flight = N520RP, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ENY3546 is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight SWA2757 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight EDV5364 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight N979SH is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight GTI5421 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N350RJ is close enough to Fort Lauderdale(FLL)
+flight = NDU571, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N945MC is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight N82WG is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight N158DB is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight AAL1006 is close enough to Salt Lake City(SLC)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW5329 is close enough to Salt Lake City(SLC)
+flight = DAL1273, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N377FX is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight AAL2569 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight AAY894 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight null is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight SWA3500 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight SWA3500 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight UCA4986 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UCA4986 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N500LC is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N500LC is close enough to Fort Lauderdale(FLL)
+flight = SWA2311, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight SWA4424 is close enough to Cleveland(CLE)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N62770 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight DAL128 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight JBU1654 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight JBU1654 is close enough to Fort Lauderdale(FLL)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW3885 is close enough to Santa Ana(SNA)
+flight = N500VJ, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA4357 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight SCX384 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight SWA2719 is close enough to Philadelphia(PHL)
+flight = SWA2351, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA2343 is close enough to Houston(HOU)
+Bolt: HubIndentifier.execute: flight DAL2606 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight SWA4068 is close enough to San Diego(SAN)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA2515 is close enough to Houston(HOU)
+flight = UAL223, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N18ZD is close enough to Phoenix(PHX)
+flight = UPS62, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N5201H is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight SWA2657 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight N560PC is close enough to Portland(PDX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL2175 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight VOI501 is close enough to San Diego(SAN)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AFL101 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight AFL101 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight AFL101 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight AAL1085 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight SKW3686 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight SWA4356 is close enough to Houston(HOU)
+Bolt: HubIndentifier.execute: flight N739BA is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight AUI231 is close enough to New York(JFK)
+flight = SWA3787, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL183 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight AAL183 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight N35229 is close enough to Miami(MIA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3978 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight SWA3978 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight SWA3237 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight SWA3237 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight N19419 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight SWA2388 is close enough to Salt Lake City(SLC)
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N2504M is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight SWA2553 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight SWA2553 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight JZA31 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight N897TF is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight SKW3937 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight ENY3645 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight SWA529 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight N31EP is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight WJA1788 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight SWA3949 is close enough to Los Angeles(LAX)
+flight = null, latitude = null, longitude = null
+flight = AAL2045, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight LXJ453 is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight JIA5424 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight DAL2960 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight DAL2960 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight AAL1413 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight UAL127 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight UAL127 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight N35288 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight NKS866 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight N303TL is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight CPZ6008 is close enough to Las Vegas(LAS)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight BADGIRL is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight N135RP is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight N35VP is close enough to Charlotte(CLT)
+Bolt: HubIndentifier.execute: flight N132GC is close enough to Las Vegas(LAS)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N381ES is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N381ES is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight SWA3399 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight DAL1056 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N6149N is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N52371 is close enough to Portland(PDX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA2521 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight UAL21 is close enough to Houston(IAH)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight OPT368 is close enough to Austin(AUS)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL808 is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight UAL2817 is close enough to Newark(EWR)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N422BL is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight BAW26E is close enough to Houston(IAH)
+Bolt: HubIndentifier.execute: flight MSQT421 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight SWA2758 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight SWA2758 is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3250 is close enough to San Diego(SAN)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N34633 is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight UAL1923 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N21428 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight N351LH is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight N351LH is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight N351LH is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight JBU231 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight JBU231 is close enough to Santa Ana(SNA)
+Bolt: HubIndentifier.execute: flight AIJ991 is close enough to Santa Ana(SNA)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N89312 is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight N816JG is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight NDU577 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight SWA9009 is close enough to New York(JFK)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA9009 is close enough to Newark(EWR)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight MLN717 is close enough to Houston(HOU)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight RPA3574 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight RPA3574 is close enough to Chicago(ORD)
+flight = UAL2363, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL708 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight UAL708 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight AAL307 is close enough to Detroit(DTW)
+flight = N686TW, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight ENY4119 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight ENY4119 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight RPA4378 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight ASA710 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight SWA4592 is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight N5379A is close enough to Tampa(TPA)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight NDU688 is close enough to Phoenix(PHX)
+flight = CKS423, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ENY4119 is close enough to New York(LGA)
+flight = ASA1972, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N735LH is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight CAP835 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight UAL1037 is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight SWA9009 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight AFR636 is close enough to Houston(IAH)
+Bolt: HubIndentifier.execute: flight JBU533 is close enough to Baltimore(BWI)
+flight = ANZ8, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight null is close enough to Fort Lauderdale(FLL)
+flight = TEST1235, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA5295 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight FFT45 is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight AAL1451 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight FDX9797 is close enough to Charlotte(CLT)
+Bolt: HubIndentifier.execute: flight EMD23 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight N44183 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight N170PG is close enough to Raleigh/Durham(RDU)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N789PH is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight N911WY is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight AAL1348 is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight LOF4657 is close enough to Denver(DEN)
+flight = TRA64V, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight LOT31 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight LOT31 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight N169HC is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N169HC is close enough to Fort Lauderdale(FLL)
+flight = UAL29, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+flight = NKS8524, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight EDV3410 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight EDV3410 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight EDV3410 is close enough to New York(LGA)
+flight = C18, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Chicago(MDW)
+flight = UAL545, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N7488R is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight AIJ2981 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight AIJ2981 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight DAL2665 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight CONN333 is close enough to Orlando(MCO)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight NKS260 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight UAL17 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight SKW3855 is close enough to Minneapolis(MSP)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UCA4962 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight EJA238 is close enough to Chicago(ORD)
+flight = CAL5237, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight EDV5239 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight EDV5239 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight EDV5239 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight ENY3915 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight ENY3915 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight ENY3915 is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL517 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight DAL517 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight CAL5155 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight EJA570 is close enough to Newark(EWR)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight PJC79 is close enough to Philadelphia(PHL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW7435 is close enough to Detroit(DTW)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL2469 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight N446PA is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight AAL1212 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight AAL33 is close enough to Los Angeles(LAX)
+flight = SWA4622, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N324BR is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight N324BR is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight null is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight null is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight UAL519 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight UAL519 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight DAL2903 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight N200NC is close enough to St Louis(STL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW3668 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight N223SH is close enough to Las Vegas(LAS)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3861 is close enough to Orlando(MCO)
+flight = null, latitude = null, longitude = null
+flight = CPT4, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3867 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight SWA3642 is close enough to Houston(HOU)
+flight = UAL256, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight JBU2901 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight JBU2901 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight COO45 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight AAL1158 is close enough to Santa Ana(SNA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA3702 is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight N176SC is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight EJA231 is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL1213 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight SKW3289 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight LOF4701 is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight GJS6229 is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight N7525J is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight AAL1180 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight AAL1180 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight DAL741 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight N1805J is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight SWA4273 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight N359FB is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL628 is close enough to Detroit(DTW)
+flight = RYR61ER, latitude = null, longitude = null
+flight = CFBCL, latitude = null, longitude = null
+flight = ONE6063, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight 273 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight 273 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight SWA4740 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight UAL1811 is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight UAL1811 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight UAL1811 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight FFT1187 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight FFT1187 is close enough to Washington(DCA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL1768 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight N377TA is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N377TA is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N840SR is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight null is close enough to Honolulu(HNL)
+flight = DAL1325, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Houston(HOU)
+Bolt: HubIndentifier.execute: flight SWA5568 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight ASH5952 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight UAL975 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight UAL975 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight CAP4649 is close enough to Seattle(SEA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N1747L is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight PWA103 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight PWA103 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight PWA103 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight AAL1216 is close enough to Baltimore(BWI)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N123ZM is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight N850MA is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight N5351L is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight AAL561 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight DAL1574 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight DAL1574 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight AAL313 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight SWA329 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight SWA329 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight NKS806 is close enough to Las Vegas(LAS)
+flight = C15, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight GAJ902 is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight N336MK is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight UAL1407 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight N721SC is close enough to Houston(HOU)
+Bolt: HubIndentifier.execute: flight N485AC is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight N1230G is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight UAL283 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight UAL283 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight UAL496 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight UAL496 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL496 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight SWA3898 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight CGHCE is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight AAL971 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight JBU1482 is close enough to Boston(BOS)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N1033A is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight ASA7 is close enough to Seattle(SEA)
+flight = UAL1193, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW3659 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight SKW3659 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight SKW3659 is close enough to New York(LGA)
+flight = C17, latitude = null, longitude = null
+flight = GTI8629, latitude = null, longitude = null
+flight = N144AL, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N1948F is close enough to Houston(HOU)
+Bolt: HubIndentifier.execute: flight SKW5247 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight AAL2489 is close enough to Dallas-Fort Worth(DFW)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight OPT333 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N25474 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight AAL566 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight N513ND is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight EDV3452 is close enough to Nashville(BNA)
+Bolt: HubIndentifier.execute: flight SWA1423 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight DAL794 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight DAL794 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight N28515 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight EJA530 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N810JL is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight DAL2167 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight N579DB is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight AAL26 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight null is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight N812GR is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight N998LL is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N998LL is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight KAP47 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight AAL35 is close enough to Austin(AUS)
+Bolt: HubIndentifier.execute: flight DAL969 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight N535WC is close enough to Portland(PDX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N6308Q is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight SKW3358 is close enough to Santa Ana(SNA)
+flight = 1GAQ473, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL51 is close enough to Dallas-Fort Worth(DFW)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N2832M is close enough to Seattle(SEA)
+flight = UAL1273, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N810RM is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N520FX is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight N774QS is close enough to Honolulu(HNL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N423PE is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight UAL770 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight AAL2533 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight AAL2533 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight ASQ4434 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight ASQ4434 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight AAL2483 is close enough to Dallas-Fort Worth(DFW)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight RPA3415 is close enough to Cleveland(CLE)
+flight = N722C, latitude = null, longitude = null
+flight = N79KL, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SWA8700 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight DAL69 is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight null is close enough to Phoenix(PHX)
+flight = NZM65, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL2901 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight EDG193 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight N601MT is close enough to Raleigh/Durham(RDU)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL1845 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight AAL1845 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N145FH is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight AAL1885 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight UAL278 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight UAL278 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight N16688 is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight N477DR is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight ROU1883 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight ROU1883 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight NDU606 is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW3364 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight N98241 is close enough to Portland(PDX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL1172 is close enough to Chicago(ORD)
+flight = SWA2385, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N239SH is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight CPZ5763 is close enough to Santa Ana(SNA)
+Bolt: HubIndentifier.execute: flight NKS467 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight FFT939 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight N835Z is close enough to Phoenix(PHX)
+flight = SKW5932, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ROU1804 is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight N589CT is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight N958AC is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight RPA3548 is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight DAL2418 is close enough to Orlando(MCO)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ASH5998 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight NKS188 is close enough to Detroit(DTW)
+Bolt: HubIndentifier.execute: flight SKW5346 is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight SWA3332 is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight N636JM is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight null is close enough to Denver(DEN)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N8361M is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight ENY3483 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight DAL2497 is close enough to Orlando(MCO)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N5104J is close enough to Seattle(SEA)
+flight = AAR201, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight KAL053 is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight JBU570 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight JBU570 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight UAL1863 is close enough to Denver(DEN)
+Bolt: HubIndentifier.execute: flight AAL2647 is close enough to Baltimore(BWI)
+Bolt: HubIndentifier.execute: flight AAL2647 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight AAL2647 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight JBU2020 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight AAL1136 is close enough to Atlanta(ATL)
+Bolt: HubIndentifier.execute: flight N52EN is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight N52EN is close enough to Fort Lauderdale(FLL)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL820 is close enough to Santa Ana(SNA)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight EJA590 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight EJA590 is close enough to Chicago(ORD)
+flight = FIF, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N708BD is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight EDV5071 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight EDV5071 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight SKW3367 is close enough to Minneapolis(MSP)
+flight = EDW13E, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight UAL947 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight N985KA is close enough to Cleveland(CLE)
+Bolt: HubIndentifier.execute: flight SKW3350 is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight null is close enough to Philadelphia(PHL)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N1538V is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight N96UA is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight null is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight CMP360 is close enough to Los Angeles(LAX)
+flight = SWA4172, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N489MH is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight N3685W is close enough to Seattle(SEA)
+Bolt: HubIndentifier.execute: flight N708CT is close enough to Phoenix(PHX)
+Bolt: HubIndentifier.execute: flight SWA3242 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight DAL2452 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight DAL2690 is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight OXF106 is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight SKW3465 is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight null is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight null is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight DAL1692 is close enough to Washington(IAD)
+Bolt: HubIndentifier.execute: flight DAL1692 is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight UAL1920 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight UAL1920 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight UAL1920 is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight N807NV is close enough to Honolulu(HNL)
+Bolt: HubIndentifier.execute: flight N8348D is close enough to Phoenix(PHX)
+flight = ACA302, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight AAL1571 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight AAL1571 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight null is close enough to San Diego(SAN)
+Bolt: HubIndentifier.execute: flight DAL2668 is close enough to Austin(AUS)
+Bolt: HubIndentifier.execute: flight N21175 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight N21175 is close enough to Chicago(ORD)
+Bolt: HubIndentifier.execute: flight N22PP is close enough to Washington(DCA)
+Bolt: HubIndentifier.execute: flight KAP33 is close enough to Boston(BOS)
+Bolt: HubIndentifier.execute: flight FFT1018 is close enough to Austin(AUS)
+Bolt: HubIndentifier.execute: flight QXE2046 is close enough to Dallas-Fort Worth(DFW)
+Bolt: HubIndentifier.execute: flight NKS880 is close enough to Minneapolis(MSP)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+Bolt: HubIndentifier.execute: flight UAL1108 is close enough to San Diego(SAN)
+flight = N7670B, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight CPZ5743 is close enough to Los Angeles(LAX)
+Bolt: HubIndentifier.execute: flight ENY3447 is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight ENY3447 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight ENY3447 is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N1754T is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight DAL1137 is close enough to Tampa(TPA)
+Bolt: HubIndentifier.execute: flight SWA1445 is close enough to Philadelphia(PHL)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N6750H is close enough to Seattle(SEA)
+flight = UAST6, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ASA782 is close enough to Orlando(MCO)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(JFK)
+Bolt: HubIndentifier.execute: flight null is close enough to Newark(EWR)
+Spout: FlightDataReader.nextTupe() completed...
+Bolt: HubIndentifier.execute: flight N80347 is close enough to Portland(PDX)
+Bolt: HubIndentifier.execute: flight UAL1106 is close enough to Santa Ana(SNA)
+Bolt: HubIndentifier.execute: flight SWA3304 is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight null is close enough to New York(LGA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight FDX3775 is close enough to San Francisco(SFO)
+Bolt: HubIndentifier.execute: flight SDU302 is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight N826T is close enough to Raleigh/Durham(RDU)
+Bolt: HubIndentifier.execute: flight SKW4936 is close enough to Detroit(DTW)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight FDX3775 is close enough to Oakland(OAK)
+Bolt: HubIndentifier.execute: flight N515PU is close enough to Miami(MIA)
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight null is close enough to Las Vegas(LAS)
+Bolt: HubIndentifier.execute: flight N606JA is close enough to Phoenix(PHX)
+flight = null, latitude = null, longitude = null
+flight = null, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight N4939L is close enough to Kansas City(MCI)
+Bolt: HubIndentifier.execute: flight N723SP is close enough to St Louis(STL)
+Bolt: HubIndentifier.execute: flight UAL1807 is close enough to Chicago(MDW)
+Bolt: HubIndentifier.execute: flight UAL1807 is close enough to Chicago(ORD)
+flight = DAL2556, latitude = null, longitude = null
+Bolt: HubIndentifier.execute: flight ENY4028 is close enough to Miami(MIA)
+Bolt: HubIndentifier.execute: flight UAL558 is close enough to Newark(EWR)
+Bolt: HubIndentifier.execute: flight N774CF is close enough to Fort Lauderdale(FLL)
+Bolt: HubIndentifier.execute: flight DAL2093 is close enough to Orlando(MCO)
+10814 [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Shutting down master
+10821 [TopologyMain.main()] INFO  backtype.storm.daemon.nimbus  - Shut down master
+10827 [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Shutting down supervisor a00ca3da-da83-4e20-a494-8e4b71464b82
+10828 [Thread-7] INFO  backtype.storm.util  - Async loop interrupted!
+10829 [Thread-8] INFO  backtype.storm.util  - Async loop interrupted!
+10830 [Thread-9] INFO  backtype.storm.util  - Async loop interrupted!
+10830 [Thread-5] INFO  backtype.storm.event  - Event manager interrupted
+10830 [Thread-6] INFO  backtype.storm.event  - Event manager interrupted
+10833 [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Shutting down acdde095-97e8-460d-9e0d-4e1ac5823fdc:fd1851b9-5af9-4f5b-9388-1fd212bf384f
+10833 [TopologyMain.main()] INFO  backtype.storm.process-simulator  - Killing process e534abb5-acf7-4502-9875-4941b89b8363
+10834 [TopologyMain.main()] INFO  backtype.storm.daemon.worker  - Shutting down worker Flights-Analysis-Toplogie-1-1555354676 acdde095-97e8-460d-9e0d-4e1ac5823fdc 4
+10834 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:8
+10835 [Thread-17] INFO  backtype.storm.util  - Async loop interrupted!
+10842 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:8
+10842 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:7
+10843 [Thread-21] INFO  backtype.storm.util  - Async loop interrupted!
+-- Flight Counter [airline-sorter-7] --
+At Airpot: ORD(Chicago)
+	LOT: 1
+	UAL: 5
+	RPA: 1
+	AIJ: 1
+	AAL: 2
+	SWA: 2
+	N21: 1
+	EJA: 3
+	SKW: 2
+	DAL: 1
+	ASQ: 1
+	total #flights = 20
+
+At Airpot: MDW(Chicago)
+	LOT: 1
+	UAL: 5
+	ENY: 1
+	RPA: 1
+	AIJ: 1
+	SCX: 1
+	AAL: 2
+	SWA: 2
+	N21: 1
+	EJA: 2
+	SKW: 1
+	ASQ: 1
+	total #flights = 19
+
+At Airpot: SAN(San Diego)
+	VOI: 1
+	UAL: 1
+	FFT: 1
+	N28: 1
+	RCH: 1
+	N95: 1
+	AAL: 3
+	SWA: 2
+	SKW: 3
+	DAL: 1
+	total #flights = 15
+
+At Airpot: EWR(Newark)
+	UAL: 11
+	AFL: 1
+	DAL: 1
+	SWR: 1
+	ENY: 4
+	N35: 1
+	UCA: 1
+	EDV: 4
+	NKS: 1
+	PWA: 1
+	JBU: 1
+	SWA: 2
+	EJA: 1
+	SKW: 1
+	ASQ: 1
+	total #flights = 32
+
+At Airpot: RDU(Raleigh/Durham)
+	GJS: 1
+	N17: 1
+	N60: 1
+	N82: 1
+	AAL: 1
+	N86: 1
+	N42: 1
+	N75: 1
+	DAL: 1
+	total #flights = 9
+
+At Airpot: DCA(Washington)
+	UAL: 3
+	UCA: 1
+	FFT: 1
+	EDV: 1
+	BAW: 1
+	ROU: 1
+	SWA: 2
+	AAL: 2
+	EJA: 1
+	VIR: 1
+	DAL: 2
+	N22: 1
+	total #flights = 17
+
+At Airpot: PDX(Portland)
+	N80: 1
+	N82: 1
+	N52: 2
+	N74: 1
+	N63: 1
+	N98: 1
+	N53: 2
+	N56: 1
+	DAL: 2
+	N89: 1
+	N44: 1
+	N19: 1
+	SWA: 2
+	SKW: 1
+	total #flights = 18
+
+At Airpot: FLL(Fort Lauderdale)
+	UAL: 1
+	N81: 2
+	N80: 1
+	PTP: 1
+	273: 1
+	N27: 1
+	810: 1
+	JBU: 6
+	SWA: 1
+	SDU: 1
+	N50: 1
+	N52: 1
+	N76: 1
+	183: 1
+	AAL: 3
+	N31: 1
+	DAL: 3
+	N77: 2
+	N99: 1
+	N13: 1
+	N35: 1
+	N16: 2
+	N38: 1
+	N15: 2
+	N37: 1
+	N17: 1
+	NKS: 2
+	total #flights = 41
+
+At Airpot: HNL(Honolulu)
+	N48: 1
+	JAL: 1
+	BAD: 1
+	KAL: 1
+	N80: 1
+	N42: 1
+	N11: 2
+	N77: 1
+	total #flights = 9
+
+At Airpot: CLT(Charlotte)
+	N35: 1
+	JIA: 1
+	FDX: 1
+	AAL: 2
+	total #flights = 5
+
+At Airpot: SLC(Salt Lake City)
+	AAL: 1
+	SWA: 1
+	SKW: 2
+	total #flights = 4
+
+At Airpot: DEN(Denver)
+	JZA: 1
+	UAL: 4
+	LOF: 1
+	FFT: 1
+	N85: 1
+	N52: 1
+	SWA: 5
+	AAL: 1
+	SKW: 3
+	total #flights = 18
+
+At Airpot: IAD(Washington)
+	UAL: 5
+	RPA: 1
+	N73: 1
+	AAL: 1
+	N97: 1
+	DAL: 3
+	FFT: 1
+	EDV: 1
+	BAW: 1
+	ROU: 1
+	SWA: 1
+	EJA: 1
+	VIR: 1
+	total #flights = 19
+
+At Airpot: SEA(Seattle)
+	DLH: 1
+	UAL: 1
+	N92: 1
+	N70: 1
+	N95: 1
+	N73: 1
+	N51: 1
+	AAL: 1
+	N97: 1
+	N23: 1
+	DAL: 1
+	N34: 1
+	N12: 1
+	N67: 1
+	ASA: 1
+	N36: 1
+	N16: 1
+	CAP: 1
+	N15: 1
+	N29: 1
+	N28: 1
+	QXE: 1
+	total #flights = 22
+
+At Airpot: HOU(Houston)
+	N19: 1
+	N72: 1
+	SWA: 4
+	MLN: 1
+	total #flights = 7
+
+At Airpot: IAH(Houston)
+	DLH: 1
+	UAL: 3
+	BAW: 1
+	AAL: 1
+	AFR: 1
+	ASQ: 1
+	total #flights = 8
+
+At Airpot: MCI(Kansas City)
+	ENY: 1
+	N49: 1
+	N40: 1
+	N21: 1
+	SWA: 3
+	AAL: 1
+	DAL: 1
+	SKW: 1
+	N44: 1
+	total #flights = 11
+
+At Airpot: BNA(Nashville)
+	N16: 1
+	JIA: 1
+	EDV: 1
+	total #flights = 3
+
+At Airpot: OAK(Oakland)
+	UAL: 4
+	FFT: 1
+	N81: 1
+	FDX: 1
+	JBU: 1
+	SWA: 3
+	AAL: 3
+	DAL: 3
+	ASA: 1
+	total #flights = 18
+
+At Airpot: SFO(San Francisco)
+	UAL: 4
+	COO: 1
+	FFT: 1
+	N81: 2
+	FDX: 1
+	SWA: 3
+	AAL: 3
+	DAL: 3
+	ASA: 1
+	total #flights = 19
+
+At Airpot: CLE(Cleveland)
+	UAL: 1
+	LOF: 1
+	RPA: 1
+	PHM: 1
+	N90: 1
+	CGH: 1
+	SWA: 2
+	N98: 1
+	total #flights = 9
+
+At Airpot: LAS(Las Vegas)
+	N91: 2
+	EDG: 1
+	AAL: 2
+	CPZ: 1
+	N31: 1
+	N23: 2
+	DAL: 2
+	WJA: 1
+	ASA: 1
+	N22: 1
+	N13: 1
+	N38: 1
+	NKS: 2
+	SWA: 1
+	SKW: 2
+	total #flights = 21
+
+At Airpot: AUS(Austin)
+	OPT: 1
+	FFT: 1
+	SWA: 1
+	AAL: 1
+	EJA: 1
+	DAL: 1
+	total #flights = 6
+
+10854 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:7
+10854 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:6
+10856 [Thread-23] INFO  backtype.storm.util  - Async loop interrupted!
+-- Flight Counter [airline-sorter-6] --
+At Airpot: PHX(Phoenix)
+	N81: 1
+	N70: 1
+	N83: 2
+	N60: 1
+	MSQ: 1
+	N96: 1
+	AAL: 3
+	WJA: 1
+	N35: 3
+	N18: 1
+	N17: 1
+	ASH: 1
+	SWA: 6
+	OXF: 2
+	EJA: 2
+	NDU: 4
+	total #flights = 31
+
+At Airpot: LAX(Los Angeles)
+	N80: 1
+	CMP: 1
+	AAL: 7
+	CPZ: 1
+	KLM: 1
+	DAL: 1
+	CAL: 1
+	N58: 1
+	N13: 1
+	N15: 1
+	ANA: 1
+	NKS: 1
+	SWA: 2
+	JBU: 1
+	SKW: 1
+	total #flights = 22
+
+At Airpot: MIA(Miami)
+	DLH: 1
+	UAL: 1
+	N80: 1
+	N61: 1
+	N62: 1
+	PTP: 1
+	273: 1
+	ENY: 1
+	810: 1
+	JBU: 5
+	SWA: 1
+	N50: 1
+	N52: 1
+	N51: 1
+	AVA: 1
+	AAL: 5
+	N76: 1
+	183: 1
+	DAL: 1
+	N99: 1
+	N13: 1
+	N35: 2
+	N38: 1
+	N16: 1
+	N15: 1
+	N37: 1
+	NKS: 2
+	GTI: 1
+	total #flights = 38
+
+At Airpot: TPA(Tampa)
+	UAL: 1
+	N70: 1
+	AAL: 2
+	N10: 1
+	N20: 1
+	N53: 1
+	N23: 1
+	DAL: 3
+	N12: 1
+	N25: 1
+	ENY: 1
+	CAP: 1
+	FFT: 1
+	AAY: 1
+	SWA: 1
+	EJA: 1
+	total #flights = 19
+
+At Airpot: DTW(Detroit)
+	GJS: 1
+	JIA: 1
+	EDV: 1
+	N81: 1
+	NKS: 1
+	FDX: 1
+	AAL: 1
+	DAL: 3
+	SKW: 2
+	total #flights = 12
+
+At Airpot: LGA(New York)
+	UAL: 7
+	AFL: 1
+	N30: 1
+	AAL: 1
+	N32: 1
+	DAL: 2
+	SWR: 1
+	ENY: 4
+	N35: 1
+	UCA: 1
+	OPT: 1
+	EDV: 2
+	PWA: 1
+	JBU: 1
+	SWA: 2
+	SKW: 1
+	total #flights = 28
+
+At Airpot: SNA(Santa Ana)
+	UAL: 2
+	AIJ: 1
+	AAL: 2
+	JBU: 1
+	CPZ: 1
+	GTI: 1
+	SKW: 2
+	DAL: 1
+	total #flights = 11
+
+At Airpot: BOS(Boston)
+	JZA: 1
+	CHH: 1
+	N63: 1
+	KAP: 3
+	SWA: 2
+	JBU: 1
+	total #flights = 9
+
+At Airpot: STL(St Louis)
+	N47: 1
+	BKN: 1
+	FFT: 1
+	N50: 1
+	N72: 1
+	N95: 1
+	SWA: 2
+	N20: 1
+	total #flights = 9
+
+At Airpot: MSP(Minneapolis)
+	N57: 1
+	NKS: 1
+	N63: 1
+	N41: 1
+	N62: 1
+	SWA: 1
+	SKW: 6
+	DAL: 3
+	N78: 1
+	N33: 1
+	total #flights = 17
+
+At Airpot: SMF(Sacramento)
+	UAL: 1
+	SWA: 1
+	AAL: 1
+	SKW: 1
+	total #flights = 4
+
+At Airpot: JFK(New York)
+	UAL: 6
+	AFL: 1
+	N32: 1
+	DAL: 2
+	SWR: 1
+	ENY: 4
+	N35: 1
+	AUI: 1
+	EDV: 4
+	PWA: 1
+	JBU: 1
+	SWA: 1
+	SKW: 1
+	total #flights = 25
+
+At Airpot: DFW(Dallas-Fort Worth)
+	UAL: 1
+	DLH: 1
+	ASH: 3
+	NKS: 1
+	BOE: 1
+	AAL: 6
+	SWA: 3
+	EMD: 1
+	SKW: 2
+	DAL: 2
+	QXE: 1
+	total #flights = 22
+
+At Airpot: PHL(Philadelphia)
+	DLH: 1
+	ENY: 1
+	GAJ: 1
+	RPA: 1
+	ASH: 1
+	N92: 1
+	PJC: 1
+	SWA: 2
+	N22: 1
+	total #flights = 10
+
+At Airpot: BWI(Baltimore)
+	UAL: 1
+	685: 1
+	ICL: 1
+	N30: 1
+	SWA: 1
+	JBU: 1
+	AAL: 2
+	LXJ: 1
+	total #flights = 9
+
+At Airpot: MCO(Orlando)
+	DLH: 1
+	N61: 1
+	N83: 1
+	N62: 1
+	N84: 1
+	ASA: 1
+	N7Z: 1
+	N25: 1
+	ENY: 1
+	N48: 1
+	EDV: 1
+	SWA: 4
+	JBU: 1
+	CON: 1
+	N94: 1
+	N51: 2
+	AAL: 3
+	DAL: 4
+	N11: 1
+	N14: 1
+	N37: 1
+	N18: 1
+	N39: 1
+	N17: 2
+	N19: 1
+	total #flights = 35
+
+At Airpot: ATL(Atlanta)
+	N13: 1
+	ROU: 1
+	SWA: 1
+	AAL: 1
+	DAL: 1
+	N89: 1
+	total #flights = 6
+
+10866 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:6
+10866 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:5
+10867 [Thread-25] INFO  backtype.storm.util  - Async loop interrupted!
+10869 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:5
+10870 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:4
+10870 [Thread-27] INFO  backtype.storm.util  - Async loop interrupted!
+10872 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:4
+10872 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:3
+10876 [Thread-29] INFO  backtype.storm.util  - Async loop interrupted!
+10878 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:3
+10878 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:2
+10879 [Thread-31] INFO  backtype.storm.util  - Async loop interrupted!
+10881 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:2
+10881 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shutting down task Flights-Analysis-Toplogie-1-1555354676:1
+10882 [Thread-33] INFO  backtype.storm.util  - Async loop interrupted!
+10885 [TopologyMain.main()] INFO  backtype.storm.daemon.task  - Shut down task Flights-Analysis-Toplogie-1-1555354676:1
+10885 [TopologyMain.main()] INFO  backtype.storm.daemon.worker  - Terminating zmq context
+10885 [TopologyMain.main()] INFO  backtype.storm.daemon.worker  - Disconnecting from storm cluster state context
+10885 [TopologyMain.main()] INFO  backtype.storm.daemon.worker  - Waiting for heartbeat thread to die
+10886 [Thread-36] INFO  backtype.storm.util  - Async loop interrupted!
+10886 [Thread-37] INFO  backtype.storm.util  - Async loop interrupted!
+10887 [Thread-16] INFO  backtype.storm.util  - Async loop interrupted!
+10887 [Thread-15] INFO  backtype.storm.event  - Event manager interrupted
+10889 [TopologyMain.main()] INFO  backtype.storm.daemon.worker  - Shut down worker Flights-Analysis-Toplogie-1-1555354676 acdde095-97e8-460d-9e0d-4e1ac5823fdc 4
+10890 [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Shut down acdde095-97e8-460d-9e0d-4e1ac5823fdc:fd1851b9-5af9-4f5b-9388-1fd212bf384f
+10891 [TopologyMain.main()] INFO  backtype.storm.daemon.supervisor  - Shutting down supervisor acdde095-97e8-460d-9e0d-4e1ac5823fdc
+10891 [Thread-12] INFO  backtype.storm.util  - Async loop interrupted!
+10891 [Thread-13] INFO  backtype.storm.util  - Async loop interrupted!
+10892 [Thread-14] INFO  backtype.storm.util  - Async loop interrupted!
+10892 [Thread-10] INFO  backtype.storm.event  - Event manager interrupted
+10892 [Thread-11] INFO  backtype.storm.event  - Event manager interrupted
+10894 [TopologyMain.main()] INFO  backtype.storm.testing  - Shutting down in process zookeeper
+10897 [TopologyMain.main()] INFO  backtype.storm.testing  - Done shutting down in process zookeeper
+10898 [TopologyMain.main()] INFO  backtype.storm.testing  - Deleting temporary path /tmp/600ac47b-eeb9-4277-a0ce-d1831411a361
+10898 [TopologyMain.main()] INFO  backtype.storm.testing  - Deleting temporary path /tmp/53f3daca-2d26-40b0-a192-8a1729670241
+10898 [TopologyMain.main()] INFO  backtype.storm.testing  - Deleting temporary path /tmp/368531cd-5c9d-4bb6-a05c-f1391d50783e
+10899 [TopologyMain.main()] INFO  backtype.storm.testing  - Deleting temporary path /tmp/e1720780-1a8c-450a-abf2-329bdcd35252
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.296 s
+[INFO] Finished at: 2019-04-15T11:58:08-07:00
+[INFO] ------------------------------------------------------------------------
